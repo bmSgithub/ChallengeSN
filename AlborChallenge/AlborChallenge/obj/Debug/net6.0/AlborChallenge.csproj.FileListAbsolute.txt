@@ -9,3 +9,14 @@ C:\Users\midone\Desktop\AlborChallenge\AlborChallenge\obj\Debug\net6.0\AlborChal
 C:\Users\midone\Desktop\AlborChallenge\AlborChallenge\obj\Debug\net6.0\refint\AlborChallenge.dll
 C:\Users\midone\Desktop\AlborChallenge\AlborChallenge\obj\Debug\net6.0\AlborChallenge.pdb
 C:\Users\midone\Desktop\AlborChallenge\AlborChallenge\obj\Debug\net6.0\ref\AlborChallenge.dll
+C:\Users\blasm\OneDrive\Desktop\ChallengeSN\AlborChallenge\AlborChallenge\bin\Debug\net6.0\AlborChallenge.deps.json
+C:\Users\blasm\OneDrive\Desktop\ChallengeSN\AlborChallenge\AlborChallenge\bin\Debug\net6.0\AlborChallenge.dll
+C:\Users\blasm\OneDrive\Desktop\ChallengeSN\AlborChallenge\AlborChallenge\bin\Debug\net6.0\AlborChallenge.pdb
+C:\Users\blasm\OneDrive\Desktop\ChallengeSN\AlborChallenge\AlborChallenge\obj\Debug\net6.0\AlborChallenge.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\blasm\OneDrive\Desktop\ChallengeSN\AlborChallenge\AlborChallenge\obj\Debug\net6.0\AlborChallenge.AssemblyInfoInputs.cache
+C:\Users\blasm\OneDrive\Desktop\ChallengeSN\AlborChallenge\AlborChallenge\obj\Debug\net6.0\AlborChallenge.AssemblyInfo.cs
+C:\Users\blasm\OneDrive\Desktop\ChallengeSN\AlborChallenge\AlborChallenge\obj\Debug\net6.0\AlborChallenge.csproj.CoreCompileInputs.cache
+C:\Users\blasm\OneDrive\Desktop\ChallengeSN\AlborChallenge\AlborChallenge\obj\Debug\net6.0\AlborChallenge.dll
+C:\Users\blasm\OneDrive\Desktop\ChallengeSN\AlborChallenge\AlborChallenge\obj\Debug\net6.0\refint\AlborChallenge.dll
+C:\Users\blasm\OneDrive\Desktop\ChallengeSN\AlborChallenge\AlborChallenge\obj\Debug\net6.0\AlborChallenge.pdb
+C:\Users\blasm\OneDrive\Desktop\ChallengeSN\AlborChallenge\AlborChallenge\obj\Debug\net6.0\ref\AlborChallenge.dll
