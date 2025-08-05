@@ -6,10 +6,11 @@
 
 using AlborChallenge.Enum;
 using AlborChallenge.Interface;
+using System.Text;
 
 namespace AlborChallenge.Entity
 {
-    public abstract class Shape
+    public abstract class Shape : IShape
     {
         public ShapeTypeEnum Type { get; set; }
         public int Width { get; set; }
@@ -26,13 +27,13 @@ namespace AlborChallenge.Entity
 
         public static string PrintInformation(List<IShape> shapes)
         {
-            var result = "";
+            var result = new StringBuilder();
 
             if (shapes != null && shapes.Any())
             {
-                foreach(Shape s in shapes)
+                foreach(var s in shapes)
                 {
-                    result += $"The shape is a {s.Type.ToString()}. Area: {Math.Round(s.CalculateArea(), 2)}. Perimeter: {Math.Round(s.CalculatePerimeter(), 2)}" + "<br/>";
+                    result.AppendLine($"The shape is a {s.Type}. Area: {Math.Round(s.CalculateArea(), 2)}. Perimeter: {Math.Round(s.CalculatePerimeter(), 2)}");
                 }
             }
             else
@@ -40,7 +41,7 @@ namespace AlborChallenge.Entity
                 throw new Exception("There are no shapes.");
             }
 
-            return result;
+            return result.ToString();
         }
     }
 }

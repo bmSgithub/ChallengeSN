@@ -20,7 +20,7 @@ namespace AlborChallengeUnitTest
             {
                 new Square(4)
             };
-            string result = "The shape is a SQUARE. Area: 16. Perimeter: 16<br/>";
+            string result = "The shape is a SQUARE. Area: 16. Perimeter: 16\r\n";
             Assert.Equal(result, Shape.PrintInformation(shapes));
         }
 
@@ -31,7 +31,7 @@ namespace AlborChallengeUnitTest
             {
                 new Circle(4)
             };
-            string result = "The shape is a CIRCLE. Area: 12,57. Perimeter: 12,57<br/>";
+            string result = "The shape is a CIRCLE. Area: 12,57. Perimeter: 12,57\r\n";
             Assert.Equal(result, Shape.PrintInformation(shapes));
         }
 
@@ -42,7 +42,7 @@ namespace AlborChallengeUnitTest
             {
                 new EquilateralTriangle(4)
             };
-            string result = "The shape is a EQUILATERAL_TRIANGLE. Area: 6,93. Perimeter: 12<br/>";
+            string result = "The shape is a EQUILATERAL_TRIANGLE. Area: 6,93. Perimeter: 12\r\n";
             Assert.Equal(result, Shape.PrintInformation(shapes));
         }
 
@@ -53,7 +53,7 @@ namespace AlborChallengeUnitTest
             {
                 new Rectangle(4,6)
             };
-            string result = "The shape is a RECTANGLE. Area: 24. Perimeter: 20<br/>";
+            string result = "The shape is a RECTANGLE. Area: 24. Perimeter: 20\r\n";
             Assert.Equal(result, Shape.PrintInformation(shapes));
         }
 
@@ -72,14 +72,14 @@ namespace AlborChallengeUnitTest
                 new Rectangle(5,7)
             };
 
-            string result = "The shape is a SQUARE. Area: 9. Perimeter: 12<br/>" +
-                "The shape is a CIRCLE. Area: 7,07. Perimeter: 9,42<br/>" +
-                "The shape is a EQUILATERAL_TRIANGLE. Area: 3,90. Perimeter: 9<br/>" +
-                "The shape is a RECTANGLE. Area: 15. Perimeter: 16<br/>" +
-                "The shape is a SQUARE. Area: 25. Perimeter: 20<br/>" +
-                "The shape is a CIRCLE. Area: 19,63. Perimeter: 15,71<br/>" +
-                "The shape is a EQUILATERAL_TRIANGLE. Area: 10,83. Perimeter: 15<br/>" +
-                "The shape is a RECTANGLE. Area: 35. Perimeter: 24<br/>";
+            string result = "The shape is a SQUARE. Area: 9. Perimeter: 12\r\n" +
+                "The shape is a CIRCLE. Area: 7,07. Perimeter: 9,42\r\n" +
+                "The shape is a EQUILATERAL_TRIANGLE. Area: 3,90. Perimeter: 9\r\n" +
+                "The shape is a RECTANGLE. Area: 15. Perimeter: 16\r\n" +
+                "The shape is a SQUARE. Area: 25. Perimeter: 20\r\n" +
+                "The shape is a CIRCLE. Area: 19,63. Perimeter: 15,71\r\n" +
+                "The shape is a EQUILATERAL_TRIANGLE. Area: 10,83. Perimeter: 15\r\n" +
+                "The shape is a RECTANGLE. Area: 35. Perimeter: 24\r\n";
 
             Assert.Equal(result, Shape.PrintInformation(shapes));
         }
