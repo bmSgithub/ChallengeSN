@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\blasm\\OneDrive\\Desktop\\ChallengeSN\\AlborChallenge\\AlborChallenge\\AlborChallenge.csproj",
+      "projectUniqueName": "C:\\Users\\blasm\\OneDrive\\Documentos\\GitHub\\ChallengeSN\\AlborChallenge\\AlborChallenge\\AlborChallenge.csproj",
       "projectName": "AlborChallenge",
-      "projectPath": "C:\\Users\\blasm\\OneDrive\\Desktop\\ChallengeSN\\AlborChallenge\\AlborChallenge\\AlborChallenge.csproj",
+      "projectPath": "C:\\Users\\blasm\\OneDrive\\Documentos\\GitHub\\ChallengeSN\\AlborChallenge\\AlborChallenge\\AlborChallenge.csproj",
       "packagesPath": "C:\\Users\\blasm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\blasm\\OneDrive\\Desktop\\ChallengeSN\\AlborChallenge\\AlborChallenge\\obj\\",
+      "outputPath": "C:\\Users\\blasm\\OneDrive\\Documentos\\GitHub\\ChallengeSN\\AlborChallenge\\AlborChallenge\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

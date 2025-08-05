@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fFelwpUclCY=",
+  "dgSpecHash": "VGj79U7Bh04=",
   "success": true,
-  "projectFilePath": "C:\\Users\\blasm\\OneDrive\\Desktop\\ChallengeSN\\AlborChallenge\\AlborChallengeUnitTest\\AlborChallengeUnitTest.csproj",
+  "projectFilePath": "C:\\Users\\blasm\\OneDrive\\Documentos\\GitHub\\ChallengeSN\\AlborChallenge\\AlborChallengeUnitTest\\AlborChallengeUnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\blasm\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\blasm\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",

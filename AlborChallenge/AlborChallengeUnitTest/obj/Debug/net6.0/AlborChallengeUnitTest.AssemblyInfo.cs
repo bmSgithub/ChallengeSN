@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlborChallengeUnitTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3400be22291bee0faba5097c9bd699921f55aebc")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlborChallengeUnitTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlborChallengeUnitTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

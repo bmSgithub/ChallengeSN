@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\blasm\\OneDrive\\Desktop\\ChallengeSN\\AlborChallenge\\",
+  "WorkspaceRootPath": "C:\\Users\\blasm\\OneDrive\\Documentos\\GitHub\\ChallengeSN\\AlborChallenge\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{128E741C-00D8-4311-8EE3-608F4756FA62}|AlborChallenge\\AlborChallenge.csproj|c:\\users\\blasm\\onedrive\\desktop\\challengesn\\alborchallenge\\alborchallenge\\entity\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{128E741C-00D8-4311-8EE3-608F4756FA62}|AlborChallenge\\AlborChallenge.csproj|c:\\users\\blasm\\onedrive\\documentos\\github\\challengesn\\alborchallenge\\alborchallenge\\entity\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{128E741C-00D8-4311-8EE3-608F4756FA62}|AlborChallenge\\AlborChallenge.csproj|solutionrelative:alborchallenge\\entity\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -48,13 +48,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Shape.cs",
-              "DocumentMoniker": "C:\\Users\\blasm\\OneDrive\\Desktop\\ChallengeSN\\AlborChallenge\\AlborChallenge\\Entity\\Shape.cs",
+              "DocumentMoniker": "C:\\Users\\blasm\\OneDrive\\Documentos\\GitHub\\ChallengeSN\\AlborChallenge\\AlborChallenge\\Entity\\Shape.cs",
               "RelativeDocumentMoniker": "AlborChallenge\\Entity\\Shape.cs",
-              "ToolTip": "C:\\Users\\blasm\\OneDrive\\Desktop\\ChallengeSN\\AlborChallenge\\AlborChallenge\\Entity\\Shape.cs",
+              "ToolTip": "C:\\Users\\blasm\\OneDrive\\Documentos\\GitHub\\ChallengeSN\\AlborChallenge\\AlborChallenge\\Entity\\Shape.cs",
               "RelativeToolTip": "AlborChallenge\\Entity\\Shape.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T09:06:37.59Z",
+              "WhenOpened": "2025-08-05T09:17:58.508Z",
               "EditorCaption": ""
             }
           ]
