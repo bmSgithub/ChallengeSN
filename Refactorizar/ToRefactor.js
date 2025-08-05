@@ -1,9 +1,26 @@
 //Refactorizar funciones aplicando buenas practicas
 
-function findMax(numbers) {
-    var max = 0;
-    for (var i = 0; i < numbers.length; i++) {
-        if (numbers[i] > max) {
+const numbers = [10, 5, 20, 15];
+const maxNumber = findMax(numbers);
+console.log('Max Number:', maxNumber);
+
+const evenNumbers = filterEvenNumbers(numbers);
+console.log('Even Numbers:', evenNumbers);
+
+const word = 'level';
+const palindrome = isPalindrome(word);
+console.log('Is Palindrome:', palindrome);
+
+const userName = 'John';
+const greeting = greet(userName);
+console.log(greeting);
+
+function findMax(numbers)
+{
+    let max = numbers[0];
+    for (let i = 1; i < numbers.length; i++){
+        if (numbers[i] > max)
+        {
             max = numbers[i];
         }
     }
@@ -11,41 +28,21 @@ function findMax(numbers) {
 }
 
 function filterEvenNumbers(numbers) {
-    var evenNumbers = [];
-    for (var i = 0; i < numbers.length; i++) {
-        if (numbers[i] % 2 == 0) {
-            evenNumbers.push(numbers[i]);
-        }
-    }
-    return evenNumbers;
+    return numbers.filter(n => n % 2 === 0)
 }
 
 function isPalindrome(word) {
-    var array = word.split('')
-    var newWordArray = []
-    for (var i = numbers.length; i >= 0; i--) {
-        newWordArray.push(array[i]);
+    const wordArray = word.split('');
+    const lastIndex = wordArray.length - 1;
+    const newWordArray = []
+    for (let i = lastIndex; i >= 0; i--) {
+        newWordArray.push(wordArray[i]);
     }
-    var newWord = newWordArray.join('');
+    const newWord = newWordArray.join('');
     return word === newWord;
 }
 
-function greet(name) {
-    if (name) return 'Hello, ' + name + '!';
-    else return 'Hello, stranger!';    
+function greet(userName) {
+    return userName ? 'Hello, ' + userName + '!' : 'Hello, stranger!';
 }
 
-var numbers = [10, 5, 20, 15];
-var maxNumber = findMax(numbers);
-console.log('Max Number:', maxNumber);
-
-var word = 'level';
-var palindrome = isPalindrome(word);
-console.log('Is Palindrome:', palindrome);
-
-var evenNumbers = filterEvenNumbers(numbers);
-console.log('Even Numbers:', evenNumbers);
-
-var name = 'John';
-var greeting = greet(name);
-console.log(greeting);
