@@ -5,7 +5,7 @@ namespace AlborChallenge.Entity
 {
     public class EquilateralTriangle : Shape, IShape
     {
-        public EquilateralTriangle(int width) : base(ShapeTypeEnum.CIRCLE, width)
+        public EquilateralTriangle(int width) : base(ShapeTypeEnum.EQUILATERAL_TRIANGLE, width)
         {
 
         }

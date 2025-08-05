@@ -3,7 +3,7 @@ using AlborChallenge.Interface;
 
 namespace AlborChallenge.Entity
 {
-    public class Rectangle : Shape, IShape
+    public class Rectangle : Shape, IRectangle
     {
         public int Height { get; set; }
 

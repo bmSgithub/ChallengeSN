@@ -5,6 +5,7 @@
  */
 
 using AlborChallenge.Enum;
+using AlborChallenge.Interface;
 
 namespace AlborChallenge.Entity
 {
@@ -19,46 +20,27 @@ namespace AlborChallenge.Entity
             Width = width;
         }
 
-        public static string PrintInformation(List<Shape> shapes)
-        {
-            var result = "";
-            if (shapes.Any())
-            {
-                var sa = 0m; //represents the area of the square
-                var ca = 0m; //represents the area of the circle
-                var ta = 0m; // represents the area of the triangle
-                var squarePerimeter = 0m;
-                var circlePerimeter = 0m;
-                var trianglePerimeter = 0m;
-                for (var i = 0; i < shapes.Count; i++)
-                {
-                    if (shapes[i].Type == "Square")
-                    {
-                        sa = shapes[i].CalculateArea();
-                        squarePerimeter = shapes[i].CalculatePerimeter();
-                        result += "The area of the square is : " + Math.Round(sa, 2) + " and the perimeter is: " + Math.Round(squarePerimeter, 2) + "<br/>";
-                    }
-                    else if (shapes[i].Type == "Circle")
-                    {
-                        ca = shapes[i].CalculateArea();
-                        circlePerimeter = shapes[i].CalculatePerimeter();
-                        result += "The area of the circle is : " + Math.Round(ca, 2) + " and the perimeter is: " + Math.Round(circlePerimeter, 2) + "<br/>";
-                    }
-                    else if (shapes[i].Type == "EquilateralTriangle")
-                    {
-                        ta = shapes[i].CalculateArea();
-                        trianglePerimeter = shapes[i].CalculatePerimeter();
-                        result += "The area of the triangle is : " + Math.Round(ta, 2) + " and the perimeter is: " + Math.Round(trianglePerimeter, 2) + "<br/>";
-                    }
-                }
-            }
-            else
-                result = "There are no shapes";
-            return result;
-        }
-
         public abstract decimal CalculateArea();
 
         public abstract decimal CalculatePerimeter();
+
+        public static string PrintInformation(List<IShape> shapes)
+        {
+            var result = "";
+
+            if (shapes != null && shapes.Any())
+            {
+                foreach(Shape s in shapes)
+                {
+                    result += $"The shape is a {s.Type.ToString()}. Area: {Math.Round(s.CalculateArea(), 2)}. Perimeter: {Math.Round(s.CalculatePerimeter(), 2)}" + "<br/>";
+                }
+            }
+            else
+            {
+                throw new Exception("There are no shapes.");
+            }
+
+            return result;
+        }
     }
 }
