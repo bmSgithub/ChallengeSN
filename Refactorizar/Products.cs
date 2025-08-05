@@ -2,48 +2,72 @@
 
 public class Products
 {
-    public decimal CalculatePrice(string productType, string productName, decimal basePrice, int quantity, bool isTaxable, 
-                                    bool hasDiscount, decimal discountRate, List<string> brand)
+    public ProductType Type {  get; set; }
+
+    public string Name { get; set; }
+
+    public decimal BasePrice { get; set; }
+
+    public int Quantity { get; set; }
+
+    public bool IsTaxable { get; set; }
+
+    public bool HasDiscount { get; set; }
+
+    public decimal DiscountRate { get; set; }
+
+    public List<string> Brands { get; set; }
+
+    public decimal CalculatePrice()
     {
-        var a = 0.0;
-        var b = 20;
-        var applyDiscount = false;
-        var taxRate = 0.05m;
+        decimal price = 0;
+        var limit = 20;
 
-        if (productType == "Electronics")
+        switch (Type)
         {
-            var taxRate1 = 0.1m;
-            var taxAmount = basePrice * taxRate1;
-            a = (basePrice + taxAmount) * quantity;
+            case ProductType.ELECTRONICS:
+                price = BasePrice * TaxRates.ELECTRONICS * Quantity;
 
-            foreach (var str in brand)
-            {
-                if (str.Length > b)
-                    applyDiscount = true;
-            }
+                if (Brands != null && Brands.Any(b => b.Length > limit))
+                {
+                    price -= price * DiscountRate;
+                }
 
-            if(applyDiscount)
-                  a -= a * discountRate;
+                break;
+            case ProductType.CLOTHING:
+                price = BasePrice * TaxRates.CLOTHING * Quantity;
+
+                if (HasDiscount)
+                {
+                    //En el codigo original es { = }  no { -= } pero se perderia el precio en ese caso, lo modifique aunque falta contexto de lo esperado.
+                    price -= price * DiscountRate;
+                }
+                break;
+            case ProductType.BOOKS:
+                price = BasePrice * Quantity;
+
+                if (IsTaxable)
+                {
+                    price *= TaxRates.BOOKS;
+                }
+                break;
         }
-        else if (productType == "Clothing")
-        {
-            var taxAmount = basePrice * taxRate;
-            a = (basePrice + taxAmount) * quantity;
 
-            a = hasDiscount ? a * discountRate : a;
-        }
-        else if (productType == "Books")
-        {
-            var taxRate2 = 0.1m;
-            var taxAmount = basePrice * taxRate2;
-            a = basePrice * quantity;
-
-            if (isTaxable)
-            {
-                a += taxAmount;
-            }
-        }
-        Console.WriteLine($"Product: {productName}, Total Price: {a:C}");
-        return a;
+        Console.WriteLine($"Product: {Name}, Total Price: {price:C}");
+        return price;
     }
+}
+
+public enum ProductType
+{
+    ELECTRONICS = 1,
+    CLOTHING = 2,
+    BOOKS = 3
+}
+
+public static class TaxRates
+{
+    public const decimal ELECTRONICS = 1.10m;
+    public const decimal CLOTHING = 1.05m;
+    public const decimal BOOKS = 1.10m;
 }
