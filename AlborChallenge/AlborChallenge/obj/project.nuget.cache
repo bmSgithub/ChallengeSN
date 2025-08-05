@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "gVXwEPsvFN3qn+F2p1kZv8DigIZUBZI2Jw6arfwKyNLgeFTzWC32kjhlGZMnIby6b2gUSNRotLn1zfzeJ60/Rw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ev\\Downloads\\OneDrive_2024-06-04\\Preguntas técnicas\\Challenge\\AlborChallenge\\AlborChallenge\\AlborChallenge.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ev\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\ev\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\ev\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512"
+  ],
+  "logs": []
+}
